@@ -5222,7 +5222,7 @@ grid 2.3 mm</description>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="150k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="180"/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
-<part name="LPOT" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-103" device="" package3d_urn="urn:adsk.eagle:package:10691/1"/>
+<part name="LPOT" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-103" device="" package3d_urn="urn:adsk.eagle:package:10691/1" override_package3d_urn="urn:adsk.eagle:package:38583240/2" override_package_urn="urn:adsk.eagle:footprint:10678/1"/>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="1k"/>
@@ -5238,14 +5238,14 @@ grid 2.3 mm</description>
 <part name="X_8" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="LEDR" library="KF301-2P" deviceset="KF301-2P" device=""/>
-<part name="POWER" library="KF301-2P" deviceset="KF301-2P" device=""/>
-<part name="LEDL" library="KF301-2P" deviceset="KF301-2P" device=""/>
-<part name="IRL" library="KF301-2P" deviceset="KF301-2P" device=""/>
-<part name="IRR" library="KF301-2P" deviceset="KF301-2P" device=""/>
-<part name="IRLEDL" library="KF301-2P" deviceset="KF301-2P" device=""/>
+<part name="LEDR" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583101/2" override_package_urn="urn:adsk.eagle:footprint:38583102/1"/>
+<part name="POWER" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583103/2" override_package_urn="urn:adsk.eagle:footprint:38583104/1"/>
+<part name="LEDL" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583107/2" override_package_urn="urn:adsk.eagle:footprint:38583108/1"/>
+<part name="IRL" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583112/2" override_package_urn="urn:adsk.eagle:footprint:38583113/1"/>
+<part name="IRR" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583109/3" override_package_urn="urn:adsk.eagle:footprint:38583110/1"/>
+<part name="IRLEDL" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583120/2" override_package_urn="urn:adsk.eagle:footprint:38583121/1"/>
 <part name="X_13" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
-<part name="IRLEDR" library="KF301-2P" deviceset="KF301-2P" device=""/>
+<part name="IRLEDR" library="KF301-2P" deviceset="KF301-2P" device="" override_package3d_urn="urn:adsk.eagle:package:38583122/2" override_package_urn="urn:adsk.eagle:footprint:38583123/1"/>
 <part name="Q4" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="BD139" device="" package3d_urn="urn:adsk.eagle:package:29483/1"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="BD139" device="" package3d_urn="urn:adsk.eagle:package:29483/1"/>
 </parts>
@@ -5734,6 +5734,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
